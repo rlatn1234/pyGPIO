@@ -326,10 +326,10 @@ modules = [
 
 setup(
 	name='pyGPIO',
-	version='0.2.1',
-	author='Stefan Mavrodiev',
-	author_email='support@olimex.com',
-	url='https://www.olimex.com/',
+	version='0.2.2',
+	author='Kim Su',
+	author_email='qnrwhr01@gmail.com',
+	url='https://github.com/rlatn1234/pyGPIO',
 	license='MIT',
 	packages=['pyGPIO', 'pyGPIO.gpio'],
 	description='Control GPIO, I2C and SPI',
