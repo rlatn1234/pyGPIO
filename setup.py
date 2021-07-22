@@ -333,7 +333,7 @@ setup(
 	license='GPL',
 	packages=['pyGPIO', 'pyGPIO.gpio'],
 	description='Control GPIO, I2C and SPI',
-	long_description=open('README.txt').read() + open('CHANGES.txt').read(),
+	long_description=open('README.md').read() + open('howtouse.md').read(),
 	classifiers=['Development Status :: 3 - Alpha',
 				'Environment :: Console',
 				'Intended Audience :: Developers',
