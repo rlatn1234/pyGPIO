@@ -1,7 +1,6 @@
 from distutils.core import setup
 from distutils.core import Extension
 from distutils.command.build_ext import build_ext as _build_ext
-from setuptools import setup,find_packages
 
 import sys, shutil
 
@@ -314,13 +313,9 @@ class build_ext(_build_ext):
 
 modules = [
 	Extension('pyGPIO2.gpio.gpio', sources=['pyGPIO2/gpio/gpio_lib.c', 'pyGPIO2/gpio/gpio.c']),
-
 	Extension('pyGPIO2.i2c', sources=['pyGPIO2/i2c/i2c_lib.c', 'pyGPIO2/i2c/i2c.c']),
-
 	Extension('pyGPIO2.spi', sources=['pyGPIO2/spi/spi_lib.c', 'pyGPIO2/spi/spi.c']),
-
 	Extension('pyGPIO2.gpio.connector', sources=['pyGPIO2/gpio/connector/connector.c']),
-
 	Extension('pyGPIO2.gpio.port', sources=['pyGPIO2/gpio/port/port.c']),
 
 ]

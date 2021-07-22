@@ -1,4 +1,4 @@
-__author__ = 'stefan'
+__author__ = 'Kim Su'
 
 
 class Colors:
