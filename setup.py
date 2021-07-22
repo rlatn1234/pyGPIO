@@ -284,7 +284,7 @@ def check_board():
 				shutil.copy2('pyGPIO2/gpio/mapping/bananapim2.h', 'pyGPIO2/gpio/mapping.h')
 
 			if "bananapim2zero" == board:
-				print ("Detected board: " + print_green("Bananapi M2"))
+				print ("Detected board: " + print_green("Bananapi M2 Zero"))
 				print_correct()
 				shutil.copy2('pyGPIO2/gpio/mapping/bananapim2zero.h', 'pyGPIO2/gpio/mapping.h')
 
