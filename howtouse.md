@@ -26,13 +26,13 @@ The gpio are named two ways:
     By port name: GPIOX, GPIOY, GPIOZ, etc.
     These can be imported from port module:
 
-    >>> from pyGPIO.gpio import port
+    >>> from pyGPIO2.gpio import port
     >>> dir(port)
 
     By connector name and pin number: gpio2p12, gpio3p8, lcdp18, uext1p3 and etc.
     These can be imported from connector module:
 
-    >>> from pyGPIO.gpio import connector
+    >>> from pyGPIO2.gpio import connector
     >>> dir(connector)
 
 Generally these constants are just an offset in the memory from the base GPIO address, so they can
@@ -72,9 +72,9 @@ GPIO::
 
     #!/usr/bin/env python
 
-    from pyGPIO.gpio import gpio
-    from pyGPIO.gpio import port
-    from pyGPIO.gpio import connector
+    from pyGPIO2.gpio import gpio
+    from pyGPIO2.gpio import port
+    from pyGPIO2.gpio import connector
 
     gpio.init() #Initialize module. Always called first
 
@@ -101,7 +101,7 @@ I2C::
 
     #!/usr/bin/env python
 
-    from pyGPIO import i2c
+    from pyGPIO2 import i2c
 
     i2c.init("/dev/i2c-2")  #Initialize module to use /dev/i2c-2
     i2c.open(0x55)  #The slave device address is 0x55
@@ -121,7 +121,7 @@ SPI::
 
     #!/usr/bin/env python
 
-    from pyGPIO import spi
+    from pyGPIO2 import spi
 
     spi.open("/dev/spidev2.0")
     #Open SPI device with default settings

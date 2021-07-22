@@ -63,7 +63,7 @@ def print_warning_board():
 
 	var3 = input("Do you want to use the mapping of a supported boards [Y/n]? ")
 	if var3 == 'Y' or var3 == 'y':
-		shutil.copy2('pyGPIO/gpio/mapping/micro.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/micro.h', 'pyGPIO2/gpio/mapping.h')
 		return
 	else:
 		print ("Abort.")
@@ -100,60 +100,60 @@ def manual_board_assignment():
 	var5 = input("")
 	
 	if var5 == '1' or var5 == '[1]':
-		shutil.copy2('pyGPIO/gpio/mapping/orangepizero.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/orangepizero.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '2' or var5 == '[2]':
-		shutil.copy2('pyGPIO/gpio/mapping/orangepipcplus.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/orangepipcplus.h', 'pyGPIO2/gpio/mapping.h')
 		return
 	elif var5 == '3' or var5 == '[3]':
-		shutil.copy2('pyGPIO/gpio/mapping/orangepiplus2e.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/orangepiplus2e.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '4' or var5 == '[4]':
-		shutil.copy2('pyGPIO/gpio/mapping/orangepilite.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/orangepilite.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '5' or var5 == '[5]':
-		shutil.copy2('pyGPIO/gpio/mapping/micro.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/micro.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '6' or var5 == '[6]':
-		shutil.copy2('pyGPIO/gpio/mapping/lime.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/lime.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '7' or var5 == '[7]':
-		shutil.copy2('pyGPIO/gpio/mapping/lime2.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/lime2.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '8' or var5 == '[8]':
 		var6 = input("Do you want to use your NanoPi Duo with [1] or without minishield [2]\n(mapping & naming in connector mode is incorrect, no changes by using port)?)")
 		if var6 == '2' or var6 == '[2]':				
-			shutil.copy2('pyGPIO/gpio/mapping/nanopiduo.h', 'pyGPIO/gpio/mapping.h')
+			shutil.copy2('pyGPIO2/gpio/mapping/nanopiduo.h', 'pyGPIO2/gpio/mapping.h')
 		elif var6 == '1' or var6 == '[1]':
-			shutil.copy2('pyGPIO/gpio/mapping/nanopiduo_minishield.h', 'pyGPIO/gpio/mapping.h')
+			shutil.copy2('pyGPIO2/gpio/mapping/nanopiduo_minishield.h', 'pyGPIO2/gpio/mapping.h')
 		else:
 			print ("Abort.")
 			sys.exit(1)
 			
 	elif var5 == '9' or var5 == '[9]':
-		shutil.copy2('pyGPIO/gpio/mapping/nanopiduo.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/nanopiduo.h', 'pyGPIO2/gpio/mapping.h')
 		return
 		
 	elif var5 == '10' or var5 == '[10]':
-		shutil.copy2('pyGPIO/gpio/mapping/pcduino3.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/pcduino3.h', 'pyGPIO2/gpio/mapping.h')
 		return
     
 	elif var5 == '11' or var5 == '[11]':
-		shutil.copy2('pyGPIO/gpio/mapping/bananapim2.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/bananapim2.h', 'pyGPIO2/gpio/mapping.h')
 		return
 
 	elif var5 == '12' or var5 == '[12]':
-		shutil.copy2('pyGPIO/gpio/mapping/bananapim2zero.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/bananapim2zero.h', 'pyGPIO2/gpio/mapping.h')
 		return
 	
 	elif var5 == '13' or var5 == '[13]':
-		shutil.copy2('pyGPIO/gpio/mapping/tritium.h', 'pyGPIO/gpio/mapping.h')
+		shutil.copy2('pyGPIO2/gpio/mapping/tritium.h', 'pyGPIO2/gpio/mapping.h')
 		return
 	
 	elif var5 == '99' or var5 == '[99]':
@@ -216,40 +216,40 @@ def check_board():
 			if "orangepizero" == board:
 				print ("Detected board: " + print_green("OrangePi Zero"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/orangepizero.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/orangepizero.h', 'pyGPIO2/gpio/mapping.h')
 
 			elif "orangepipcplus" == board:
 				print ("Detected board: " + print_green("OrangePi Pc Plus"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/orangepipcplus.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/orangepipcplus.h', 'pyGPIO2/gpio/mapping.h')
 				
 			elif "orangepiplus2e" == board:
 				print ("Detected board: " + print_green("OrangePi Plus 2E"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/orangepiplus2e.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/orangepiplus2e.h', 'pyGPIO2/gpio/mapping.h')
 				
 			elif "orangepilite" == board:
 				print ("Detected board: " + print_green("OrangePi Lite"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/orangepilite.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/orangepilite.h', 'pyGPIO2/gpio/mapping.h')
 
 			#Olimex Boards
 			elif "micro" == board:
 				print ("Detected board: " + print_green("A20-OLinuXino-MICRO"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/micro.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/micro.h', 'pyGPIO2/gpio/mapping.h')
 				print_annotation_olimex()
 				
 			elif "lime" == board:
 				print ("Detected board: " + print_green("A20-OLinuXIno-LIME"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/lime.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/lime.h', 'pyGPIO2/gpio/mapping.h')
 				print_annotation_olimex()
 
 			elif "lime2" == board:
 				print ("Detected board: " + print_green("A20-OLinuXIno-LIME2"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/lime2.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/lime2.h', 'pyGPIO2/gpio/mapping.h')
 				print_annotation_olimex()
 
 			#FriendlyArm Boards
@@ -258,9 +258,9 @@ def check_board():
 				print_correct()
 				var6 = input("Do you want to use your NanoPi Duo with [1] ore without minishield [2]\n(mapping & naming in connector mode is incorrect, no changes by using port)?)")
 				if var6 == '2' or var6 == '[2]':				
-					shutil.copy2('pyGPIO/gpio/mapping/nanopiduo.h', 'pyGPIO/gpio/mapping.h')
+					shutil.copy2('pyGPIO2/gpio/mapping/nanopiduo.h', 'pyGPIO2/gpio/mapping.h')
 				elif var6 == '1' or var6 == '[1]':
-					shutil.copy2('pyGPIO/gpio/mapping/nanopiduo_minishield.h', 'pyGPIO/gpio/mapping.h')
+					shutil.copy2('pyGPIO2/gpio/mapping/nanopiduo_minishield.h', 'pyGPIO2/gpio/mapping.h')
 				else:
 					print ("Abort.")
 					sys.exit(1)
@@ -268,30 +268,30 @@ def check_board():
 			elif "nanopineo" == board:
 				print ("Detected board: NanoPi Neo")
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/nanopineo.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/nanopineo.h', 'pyGPIO2/gpio/mapping.h')
 
 			#LinkSprite Boards
 			elif "pcduino3" == board:
 				print ("Detected board: pcDuino3")
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/pcduino3.h', 'pyGPIO/gpio/mapping.h')		
+				shutil.copy2('pyGPIO2/gpio/mapping/pcduino3.h', 'pyGPIO2/gpio/mapping.h')		
 			
 			#Sinovoip Boards
 			if "bananapim2" == board:
 				print ("Detected board: " + print_green("Bananapi M2"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/bananapim2.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/bananapim2.h', 'pyGPIO2/gpio/mapping.h')
 
 			if "bananapim2zero" == board:
 				print ("Detected board: " + print_green("Bananapi M2"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/bananapim2zero.h', 'pyGPIO/gpio/mapping.h')
+				shutil.copy2('pyGPIO2/gpio/mapping/bananapim2zero.h', 'pyGPIO2/gpio/mapping.h')
 
 			#Libre Computer Boards
 			if board in ("tritium-h3", "tritium-h5"):
 				print ("Detected board: " + print_green("Tritium"))
 				print_correct()
-				shutil.copy2('pyGPIO/gpio/mapping/tritium.h', 'pyGPIO/gpio/mapping.h')			
+				shutil.copy2('pyGPIO2/gpio/mapping/tritium.h', 'pyGPIO2/gpio/mapping.h')			
 				
 			else:
 				print ("Unknown board")
@@ -312,28 +312,28 @@ class build_ext(_build_ext):
 
 
 modules = [
-	Extension('pyGPIO.gpio.gpio', sources=['pyGPIO/gpio/gpio_lib.c', 'pyGPIO/gpio/gpio.c']),
+	Extension('pyGPIO22.gpio.gpio', sources=['pyGPIO2/gpio/gpio_lib.c', 'pyGPIO22/gpio/gpio.c']),
 
-	Extension('pyGPIO.i2c', sources=['pyGPIO/i2c/i2c_lib.c', 'pyGPIO/i2c/i2c.c']),
+	Extension('pyGPIO22.i2c', sources=['pyGPIO2/i2c/i2c_lib.c', 'pyGPIO22/i2c/i2c.c']),
 
-	Extension('pyGPIO.spi', sources=['pyGPIO/spi/spi_lib.c', 'pyGPIO/spi/spi.c']),
+	Extension('pyGPIO22.spi', sources=['pyGPIO2/spi/spi_lib.c', 'pyGPIO22/spi/spi.c']),
 
-	Extension('pyGPIO.gpio.connector', sources=['pyGPIO/gpio/connector/connector.c']),
+	Extension('pyGPIO22.gpio.connector', sources=['pyGPIO22/gpio/connector/connector.c']),
 
-	Extension('pyGPIO.gpio.port', sources=['pyGPIO/gpio/port/port.c']),
+	Extension('pyGPIO22.gpio.port', sources=['pyGPIO22/gpio/port/port.c']),
 
 ]
 
 setup(
-	name='pyGPIO',
+	name='pyGPIO22',
 	version='0.2.2',
 	author='Kim Su',
 	author_email='qnrwhr01@gmail.com',
-	url='https://github.com/rlatn1234/pyGPIO',
+	url='https://github.com/rlatn1234/pyGPIO2',
 	license='GPL',
-	packages=['pyGPIO', 'pyGPIO.gpio'],
+	packages=['pyGPIO2', 'pyGPIO2.gpio'],
 	description='Control GPIO, I2C and SPI',
-	long_description=open('README.md').read() + open('howtouse.md').read(),
+	long_description=open('readme.md').read() + open('howtouse.md').read(),
 	classifiers=['Development Status :: 3 - Alpha',
 				'Environment :: Console',
 				'Intended Audience :: Developers',

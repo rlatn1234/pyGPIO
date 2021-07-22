@@ -3,7 +3,7 @@ import os, sys
 if not os.getegid() == 0:
 	sys.exit('start script as root')
 	
-from pyGPIO.gpio import gpio, port
+from pyGPIO2.gpio import gpio, port
 from time import sleep
 
 gpio.init()

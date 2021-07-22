@@ -1,4 +1,4 @@
-The library is under development and not fully tested yet. For progress and information click [here](https://forum.armbian.com/topic/5662-pygpio-a-more-general-python-gpio-library/)
+The library is under development and not fully tested yet. For progress and information click [here](https://forum.armbian.com/topic/5662-pyGPIO2-a-more-general-python-gpio-library/)
 
 
 This package provide methods for controlling GPIO pins, I2C and SPI buses.
@@ -8,7 +8,7 @@ package we recommend reading the article at olimex [wiki](https://www.olimex.com
 
 When using GPIO make sure that the desired gpio is not used by another periphery.
 
-forked from [pyGPIO](https://github.com/chwe17/pyGPIO)
+forked from [pyGPIO2](https://github.com/chwe17/pyGPIO2)
 
 [how to use](howtouse.md)
 
