@@ -313,20 +313,20 @@ class build_ext(_build_ext):
 
 
 modules = [
-	Extension('pyGPIO22.gpio.gpio', sources=['pyGPIO2/gpio/gpio_lib.c', 'pyGPIO22/gpio/gpio.c']),
+	Extension('pyGPIO2.gpio.gpio', sources=['pyGPIO2/gpio/gpio_lib.c', 'pyGPIO2/gpio/gpio.c']),
 
-	Extension('pyGPIO22.i2c', sources=['pyGPIO2/i2c/i2c_lib.c', 'pyGPIO22/i2c/i2c.c']),
+	Extension('pyGPIO2.i2c', sources=['pyGPIO2/i2c/i2c_lib.c', 'pyGPIO2/i2c/i2c.c']),
 
-	Extension('pyGPIO22.spi', sources=['pyGPIO2/spi/spi_lib.c', 'pyGPIO22/spi/spi.c']),
+	Extension('pyGPIO2.spi', sources=['pyGPIO2/spi/spi_lib.c', 'pyGPIO2/spi/spi.c']),
 
-	Extension('pyGPIO22.gpio.connector', sources=['pyGPIO22/gpio/connector/connector.c']),
+	Extension('pyGPIO2.gpio.connector', sources=['pyGPIO2/gpio/connector/connector.c']),
 
-	Extension('pyGPIO22.gpio.port', sources=['pyGPIO22/gpio/port/port.c']),
+	Extension('pyGPIO2.gpio.port', sources=['pyGPIO2/gpio/port/port.c']),
 
 ]
 
 setup(
-	name='pyGPIO22',
+	name='pyGPIO2',
 	version='0.2.2',
 	author='Kim Su',
 	author_email='qnrwhr01@gmail.com',
