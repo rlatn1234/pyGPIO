@@ -95,7 +95,7 @@ def manual_board_assignment():
 	print ("[9]  NanoPi Neo")
 	print ("[10] pcDuino3")
 	print ("[11] BananaPi M2")
-	print ("[12] BananaPi M2")
+	print ("[12] BananaPi M2 Zero")
 	print ("[13] Tritium")
 	print ("[99] Abort")
 	var5 = input("")
