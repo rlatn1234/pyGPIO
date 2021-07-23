@@ -1,3 +1,10 @@
+/*
+ *
+ * This file is part of pyGPIO2Lime.
+ * mapping.h is python GPIO extension.
+ *
+ */
+
 #ifndef __MAPPING_H
 #define __MAPPING_H
 
@@ -41,7 +48,7 @@ GPIO28*	|··|	GPIO29*
 GPIO5	|··|	GND
 GPIO6	|··|	GPIO12
 GPIO13	|··|	GND
-GPIO19	|··|	GPIO16
+GPIO19	|··|	GPIO16 
 GPIO26	|··|	GPIO20
 GND	    |··|	GPIO21
 (*) on the RPi those two pins are used for official HATS (read out eeprom), since this is never depoyed 

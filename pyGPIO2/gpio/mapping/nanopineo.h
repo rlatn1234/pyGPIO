@@ -1,26 +1,7 @@
 /*
  *
- * This file is part of pyA20.
+ * This file is part of pyGPIO2.
  * mapping.h is python GPIO extension.
- *
- * Copyright (c) 2014 Stefan Mavrodiev @ OLIMEX LTD, <support@olimex.com>
- *
- * pyA20 is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- *
- * mapping.h from: https://github.com/wdmomoxx/orangepi_ZERO_gpio_pyH2
  *
  */
 
@@ -50,15 +31,15 @@ gpio_t gpio[] = {
 Description of Pinheader, please don't change pinnumer to keep this library consistent! A 'RPi compatible'
 pin header (26pin 'model A') looks like the following:
 
-3.3V			|··|	5V
+3.3V			    |··|	5V
 GPIO2 (I2C0_SDA)	|··|	5V
 GPIO3 (I2C0_SCL)	|··|	GND
 GPIO4 (GPIOG11)		|··|	GPIO14 (UART1_TX)
-GND			|··|	GPIO15 (UART1_RX)
+GND			        |··|	GPIO15 (UART1_RX)
 GPIO17 (UART2_TX)	|··|	GPIO18 (PMW)	
 GPIO27 (UART2_RTS)	|··|	GND
 GPIO22 (UART2_CTS)	|··|	GPIO23 (UART1_RTS)
-3.3V			|··|	GPIO24 (UART1_CTS)
+3.3V			    |··|	GPIO24 (UART1_CTS)
 GPIO10 (SPI0_MOSI)	|··|	GND
 GPIO9 (SPI0_MISO)	|··|	GPIO25 (UART2_RX)
 GPIO11 (SPI0_CLK)	|··|	GPIO8 (SPI0_CS)

@@ -1,25 +1,7 @@
 /*
  *
- * This file is part of pyA20.
+ * This file is part of pyGPIO2.
  * mapping.h is python GPIO extension.
- *
- * Copyright (c) 2014 Stefan Mavrodiev @ OLIMEX LTD, <support@olimex.com>
- *
- * pyA20 is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- *
  * mapping.h from: https://github.com/wdmomoxx/orangepi_ZERO_gpio_pyH2
  *
  */
@@ -47,10 +29,10 @@ typedef struct _gpio {
 gpio_t gpio[] = {
 
 /*
-			J1		  	 J2
-(UART0_RX)		|1| microUSB |1|	 5V	
-(UART0_TX)		|·|	 		 |·|	5V						
-GND			|·|	 		 |·|	3.3V
+			        J1		  	 J2
+(UART0_RX)		    |1| microUSB |1|	 5V	
+(UART0_TX)		    |·|	 		 |·|	5V						
+GND			        |·|	 		 |·|	3.3V
 GPIO3 (TWI_SCL)		|·|			 |·|	GND	
 GPIO2 (TWI_SDA)		|·|			 |·| 	GPIO4 (IR_RX)
 GPIO23 (SPI1_CS)	|·|			 |·|	GPIO18 (IOG11)	
@@ -59,11 +41,11 @@ GPIO27 (SPI1_MISO)	|·|			 |·|	DM3 D+
 GPIO17 (SPI1_MOSI)	|·|			 |·|	DM2 D-	
 GPIO15(UART1_RX)	|·|			 |·|	DM2 D+
 GPIO14 (UART1_TX)	|·|			 |·|	RDN
-(CVBS)			|·|			 |·|	RDP	
-(LINEOUT_L)		|·|			 |·|	TXN
-(LINEOUT_R)		|·|			 |·|	TXP
-(MICP)			|·|			 |·|	LED-LINK
-(MICN)			|·|	microSD		 |·|	LED-SPD
+(CVBS)			    |·|			 |·|	RDP	
+(LINEOUT_L)		    |·|			 |·|	TXN
+(LINEOUT_R)		    |·|			 |·|	TXP
+(MICP)			    |·|			 |·|	LED-LINK
+(MICN)			    |·|	microSD	 |·|	LED-SPD
 
 */  {"J1",
         {

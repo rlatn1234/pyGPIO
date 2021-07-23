@@ -1,26 +1,7 @@
 /*
  *
- * This file is part of pyA20.
+ * This file is part of pyGPIO2.
  * mapping.h is python GPIO extension.
- *
- * Copyright (c) 2014 Stefan Mavrodiev @ OLIMEX LTD, <support@olimex.com>
- *
- * pyA20 is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- *
- * mapping.h from: https://github.com/wdmomoxx/orangepi_ZERO_gpio_pyH2
  *
  */
 
@@ -53,7 +34,7 @@ pin header (40pin) looks like the following:
 GPIO2	|··|	5V
 GPIO3	|··|	GND
 GPIO4	|··|	GPIO14
-GND	|··|	GPIO15
+GND	    |··|	GPIO15
 GPIO17	|··|	GPIO18
 GPIO27	|··|	GND
 GPIO22	|··|	GPIO23
@@ -61,14 +42,14 @@ GPIO22	|··|	GPIO23
 GPIO10	|··|	GND
 GPIO9	|··|	GPIO25
 GPIO11	|··|	GPIO8
-GND	|··|	GPIO7	
+GND	    |··|	GPIO7	
 GPIO28*	|··|	GPIO29*
 GPIO5	|··|	GND
 GPIO6	|··|	GPIO12
 GPIO13	|··|	GND
 GPIO19	|··|	GPIO16
 GPIO26	|··|	GPIO20
-GND	|··|	GPIO21
+GND	    |··|	GPIO21
 (*) on the RPi those two pins are used for official HATS (read out eeprom), since this is never depoyed 
 on SUNXI boards we can use this GPIOs too. ;)
 replace XZ with the pin which is wired out on this position (e.g. PA10, PG11 etc.) 
